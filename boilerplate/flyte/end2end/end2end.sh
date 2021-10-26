@@ -11,7 +11,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 OUT="${DIR}/tmp"
 rm -rf ${OUT}
-git clone https://github.com/flyteorg/flyte.git "${OUT}"
+git clone https://github.com/flyteorg/flyte.git "${OUT}" -b feature/e2e
 
 pushd ${OUT}
 
